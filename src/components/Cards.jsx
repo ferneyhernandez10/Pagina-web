@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 import { FcLike } from "react-icons/fc";
 
-const Cards = ({ currentPage }) => {
+const Cards = ({ currentPage, setMaxPage }) => {
   const cardProducts = [
     {
       topText: "Free product",
@@ -229,31 +231,54 @@ const Cards = ({ currentPage }) => {
     },
   ];
 
-  const cardsPerPage = 4;
-  const indexOfLastCard = currentPage * cardsPerPage;
-  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const [cardsToShow, setCardsToShow] = useState(4);
+
+  const updateCardsToShow = () => {
+    if (window.innerWidth >= 1024) {
+      setCardsToShow(4);
+      setMaxPage(5);
+    } else if (window.innerWidth >= 768) {
+      setCardsToShow(3);
+      setMaxPage(7);
+    } else {
+      setCardsToShow(2);
+      setMaxPage(10);
+    }
+  };
+
+  useEffect(() => {
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => {
+      window.removeEventListener("resize", updateCardsToShow);
+    };
+  }, []);
+
+  const indexOfLastCard = currentPage * cardsToShow;
+  const indexOfFirstCard = indexOfLastCard - cardsToShow;
   const currentCards = cardProducts.slice(indexOfFirstCard, indexOfLastCard);
 
   return (
-    <div className="flex flex-row justify-between ">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
       {currentCards.map((products, index) => {
         return (
-          <div key={index} className="max-w-min py-4 pr-4 ">
-            <div className="rounded-lg border-2 border-white hover:border-[#cccccc] ">
-              <div className="w-[264px] h-[424px] rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer ">
+          <div key={index} className="p-2 md:p-4">
+            <div className="rounded-lg border-2 border-white border-solid hover:border-[#cccccc] ">
+              <div className="w-full h-full rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer ">
                 <div className="relative w-full h-full">
                   <div
-                    className="absolute top-3 left-0 flex items-center w-auto h-[42px] px-4 mb-2 bg-right bg-no-repeat bg-cover"
+                    className="absolute top-3 left-0 flex items-center w-auto h-6 md:h-[34px] px-2 md:px-4 mb-2 bg-right bg-no-repeat bg-cover"
                     style={{
                       backgroundImage:
                         "url(https://www.socialnature.com/images/badge-pink.svg)",
                     }}
                   >
-                    <span className="w-full font-karla text-sm font-extrabold text-white uppercase text-nowrap">
+                    <span className="w-full h-full font-karla text-xs/[24px] lg:text-sm/[24px] font-bold text-white uppercase text-nowrap flex items-center">
                       {products.topText}
                     </span>
                   </div>
-                  <div className="px-4 pt-10 pb-4 rounded-xl border-b-4 border-slate-100">
+
+                  <div className="px-4 pt-10 pb-4 rounded-xl border-slate-100">
                     <img
                       className="w-full h-52"
                       src={products.centerImage}
@@ -261,43 +286,49 @@ const Cards = ({ currentPage }) => {
                     />
                   </div>
 
-                  {/* <div className="max-w-max h-9 px-4 bg-no-repeat bg-cover" style={{backgroundImage: 'url(https://www.socialnature.com/images/badge-pink.svg)'}}>
-              <span className="font-karla text-sm font-extrabold text-white " >FREE PRODUCT</span>
-            </div> */}
-                  {/* <div className="px-4 pt-10 pb-4 rounded-xl border-b-4 border-slate-100">
-              <img className="w-full h-52" src={products.centerImage} alt="Card center image" />
-            </div> */}
-                  <div className="px-4 pt-4 pb-2 ">
+                  <div className="font-karla text-base font-normal text-[#5D5D5D] px-2 md:px-4 pt-2 md:pt-4 pb-[3px] md:pb-2 ">
                     <div>
-                      <span className="font-karla text-sm font-normal text-[#5D5D5D]">
+                      <span className="text-sm font-normal">
                         {products.title}
                       </span>
                     </div>
-                    <div>
-                      <span className="font-karla text-base font-bold text-[#5D5D5D]">
+                    <div className="h-12 md:h-auto">
+                      <span className="text-base/[20px] font-bold">
                         {products.subtitle}
                       </span>
                     </div>
                   </div>
-                  <div className="px-4 pb-4">
-                    <div className="flex">
-                      <FcLike className="w-6 h-6" />
-                      <span>
-                        <span className="font-karla text-sm font-normal text-[#333333] mx-1">
-                          {products.texto1}
-                        </span>
-                        <span className="font-karla text-sm font-normal text-[#333333] ">
-                          {products.texto2}
-                        </span>
+
+                  <div className="px-2 md:px-4 pb-2 md:pb-4">
+                    <div className="flex font-karla text-base font-normal text-[#333333]">
+                      <div className="lg:w-6 lg:h-6 flex justify-center ">
+                        <FcLike />
+                      </div>
+                      <span className="text-sm ">
+                        <span className="mx-[3.5px]">{products.texto1}</span>
+                        <span>{products.texto2}</span>
                       </span>
                     </div>
-                    <div className="pt-4">
-                      {console.log(products.smallImages)}
-                      <img
-                        className="w-7 h-7"
-                        src={products.smallImages}
-                        alt="Card small images"
-                      />
+
+                    <div className="pt-2 md:pt-4">
+                      {Array.isArray(products.smallImages) ? (
+                        <div className="flex">
+                          {products.smallImages.map((img, index) => (
+                            <img
+                              key={index}
+                              className="w-[26px] md:w-8 h-[26px] md:h-8 rounded-sm "
+                              src={img}
+                              alt="Card small images"
+                            />
+                          ))}
+                        </div>
+                      ) : (
+                        <img
+                          className="w-[26px] md:w-8 h-[26px] md:h-8 rounded-sm "
+                          src={products.smallImages}
+                          alt="Card small images"
+                        />
+                      )}
                     </div>
                   </div>
                 </div>
@@ -308,6 +339,11 @@ const Cards = ({ currentPage }) => {
       })}
     </div>
   );
+};
+
+Cards.propTypes = {
+  currentPage: PropTypes.node,
+  setMaxPage: PropTypes.func.isRequired,
 };
 
 export default Cards;
