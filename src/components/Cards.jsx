@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import { FcLike } from "react-icons/fc";
+import Card from "./Card";
 
 const Cards = ({ currentPage, setMaxPage }) => {
   const cardProducts = [
@@ -260,83 +260,9 @@ const Cards = ({ currentPage, setMaxPage }) => {
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-      {currentCards.map((products, index) => {
-        return (
-          <div key={index} className="p-2 md:p-4">
-            <div className="rounded-lg border-2 border-white border-solid hover:border-[#cccccc] ">
-              <div className="w-full h-full rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer ">
-                <div className="relative w-full h-full">
-                  <div
-                    className="absolute top-3 left-0 flex items-center w-auto h-6 md:h-[34px] px-2 md:px-4 mb-2 bg-right bg-no-repeat bg-cover"
-                    style={{
-                      backgroundImage:
-                        "url(https://www.socialnature.com/images/badge-pink.svg)",
-                    }}
-                  >
-                    <span className="w-full h-full font-karla text-xs/[24px] lg:text-sm/[24px] font-bold text-white uppercase text-nowrap flex items-center">
-                      {products.topText}
-                    </span>
-                  </div>
-
-                  <div className="px-4 pt-10 pb-4 rounded-xl border-slate-100">
-                    <img
-                      className="w-full h-52"
-                      src={products.centerImage}
-                      alt="Card center image"
-                    />
-                  </div>
-
-                  <div className="font-karla text-base font-normal text-[#5D5D5D] px-2 md:px-4 pt-2 md:pt-4 pb-[3px] md:pb-2 ">
-                    <div>
-                      <span className="text-sm font-normal">
-                        {products.title}
-                      </span>
-                    </div>
-                    <div className="h-12 md:h-auto">
-                      <span className="text-base/[20px] font-bold">
-                        {products.subtitle}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="px-2 md:px-4 pb-2 md:pb-4">
-                    <div className="flex font-karla text-base font-normal text-[#333333]">
-                      <div className="lg:w-6 lg:h-6 flex justify-center ">
-                        <FcLike />
-                      </div>
-                      <span className="text-sm ">
-                        <span className="mx-[3.5px]">{products.texto1}</span>
-                        <span>{products.texto2}</span>
-                      </span>
-                    </div>
-
-                    <div className="pt-2 md:pt-4">
-                      {Array.isArray(products.smallImages) ? (
-                        <div className="flex">
-                          {products.smallImages.map((img, index) => (
-                            <img
-                              key={index}
-                              className="w-[26px] md:w-8 h-[26px] md:h-8 rounded-sm "
-                              src={img}
-                              alt="Card small images"
-                            />
-                          ))}
-                        </div>
-                      ) : (
-                        <img
-                          className="w-[26px] md:w-8 h-[26px] md:h-8 rounded-sm "
-                          src={products.smallImages}
-                          alt="Card small images"
-                        />
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+      {currentCards.map((product, index) => (
+        <Card key={index} product={product} />
+      ))}
     </div>
   );
 };
