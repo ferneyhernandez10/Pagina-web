@@ -1,15 +1,19 @@
 import PropTypes from "prop-types";
 
-const CardImage = ({ image }) => {
+const CardImage = ({ centerImage }) => {
   return (
     <div className="px-4 pt-10 pb-4 rounded-xl border-slate-100">
-      <img className="max-w-full h-auto" src={image} alt="Card center image" />
+      <img
+        className="max-w-full h-auto"
+        src={centerImage}
+        alt="Card center image"
+      />
     </div>
   );
 };
 
 CardImage.propTypes = {
-  image: PropTypes.string.isRequired,
+  centerImage: PropTypes.string.isRequired,
 };
 
 export default CardImage;

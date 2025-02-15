@@ -2,19 +2,7 @@ import PropTypes from "prop-types";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 
-const Pagination = ({ currentPage, setCurrentPage, maxPage }) => {
-  const nextPage = () => {
-    if (currentPage < maxPage) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
-
-  const prevPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
+const Pagination = ({ currentPage, maxPage, prevPage, nextPage }) => {
   const homeButtonGray =
     currentPage === 1
       ? "bg-[rgba(65,75,90,0.15)]"
@@ -51,9 +39,10 @@ const Pagination = ({ currentPage, setCurrentPage, maxPage }) => {
 };
 
 Pagination.propTypes = {
-  currentPage: PropTypes.node,
-  setCurrentPage: PropTypes.func.isRequired,
-  maxPage: PropTypes.node,
+  currentPage: PropTypes.number.isRequired,
+  maxPage: PropTypes.number.isRequired,
+  prevPage: PropTypes.func.isRequired,
+  nextPage: PropTypes.func.isRequired,
 };
 
 export default Pagination;

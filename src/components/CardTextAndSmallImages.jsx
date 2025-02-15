@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { FcLike } from "react-icons/fc";
 
-const CardTextAndSmallImages = ({ product, smallImages }) => {
+const CardTextAndSmallImages = ({ texto1, texto2, smallImages }) => {
   return (
     <div className="px-2 md:px-4 pb-2 md:pb-4">
       <div className="flex font-karla text-base font-normal text-[#333333]">
@@ -9,8 +9,8 @@ const CardTextAndSmallImages = ({ product, smallImages }) => {
           <FcLike />
         </div>
         <span className="text-sm">
-          <span className="mx-[3.5px]">{product.texto1}</span>
-          <span>{product.texto2}</span>
+          <span className="mx-[3.5px]">{texto1}</span>
+          <span>{texto2}</span>
         </span>
       </div>
 
@@ -39,7 +39,8 @@ const CardTextAndSmallImages = ({ product, smallImages }) => {
 };
 
 CardTextAndSmallImages.propTypes = {
-  product: PropTypes.object.isRequired,
+  texto1: PropTypes.string.isRequired,
+  texto2: PropTypes.string.isRequired,
   smallImages: PropTypes.oneOfType([PropTypes.string, PropTypes.array])
     .isRequired,
 };

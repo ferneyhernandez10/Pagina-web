@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        'gris-claro': 'rgb(251, 251, 251)',
+        'gray-10': 'rgb(251, 251, 251)',
+        'gray-20': 'rgb(241, 241, 241)',
       },
     },
     fontFamily: {
