@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Card from "./Card";
 import CardImage from "./CardImage";
 import CardText from "./CardText";
-// import CardTextAndSmallImages from "./CardTextAndSmallImages";
+import CardTextAndSmallImages from "./CardTextAndSmallImages";
 
 const TopRatedProductCards = ({
   centerImage,
@@ -21,11 +21,11 @@ const TopRatedProductCards = ({
 
               <CardText title={title} subtitle={subtitle} />
 
-              {/* <CardTextAndSmallImages
-                  texto1={texto1}
-                  texto2={texto2}
-                  // smallImages={product.smallImages}
-                /> */}
+              <CardTextAndSmallImages
+                texto1={texto1}
+                texto2={texto2}
+                // smallImages={product.smallImages}
+              />
             </div>
           </div>
         </div>

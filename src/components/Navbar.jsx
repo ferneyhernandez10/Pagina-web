@@ -30,12 +30,12 @@ const Navbar = ({ toggleMenu }) => {
       </div>
 
       <div className="flex">
-        <div className="px-0 lg:px-3">
+        <div className="px-0 lg:px-5 lg:py-2.5">
           <button className="bg-[#37c0c0] bg-gradient-to-b from-[#d1239d] to-[#e42748] hover:bg-gradient-to-tl text-white font-medium rounded text-sm text-nowrap px-4 py-1.5 ">
             SIGN UP
           </button>
         </div>
-        <div className="px-0 lg:px-5">
+        <div className="px-0 lg:px-5 lg:py-2.5 flex items-center ">
           <a
             href="#Login"
             className="text-sm hover:text-[#5D5D5D]/75 hidden lg:block"
@@ -44,10 +44,10 @@ const Navbar = ({ toggleMenu }) => {
           </a>
         </div>
         <div
-          className="px-[13px] cursor-pointer lg:hidden"
+          className="px-[13px] cursor-pointer flex items-center lg:hidden"
           onClick={toggleMenu}
         >
-          <FiMenu className="text-3xl" />
+          <FiMenu className="w-6 h-6 " />
         </div>
       </div>
     </nav>

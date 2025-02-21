@@ -3,6 +3,7 @@ import Card from "./Card";
 import CardImage from "./CardImage";
 import CardText from "./CardText";
 import CardTextAndSmallImages from "./CardTextAndSmallImages";
+import { FcLike } from "react-icons/fc";
 
 const CardProducts = ({
   topText,
@@ -16,7 +17,7 @@ const CardProducts = ({
   return (
     <Card>
       <div className="p-2 md:p-4">
-        <div className="rounded-lg border-2 border-white border-solid hover:border-[#cccccc]">
+        <div className="rounded-lg border-2 border-white border-solid hover:border-[#cccccc] h-full">
           <div className="w-full h-full rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer">
             <div className="relative w-full h-full">
               <div
@@ -33,9 +34,11 @@ const CardProducts = ({
 
               <CardImage centerImage={centerImage} />
 
-              <CardText title={title} subtitle={subtitle} />
+              <CardText title={title} subtitle={subtitle} isCardProducts={true} />
 
               <CardTextAndSmallImages
+                icon={<FcLike />}
+                isCardProducts={true}
                 texto1={texto1}
                 texto2={texto2}
                 smallImages={smallImages}
