@@ -16,10 +16,12 @@ const TopRatedProductCards = ({
       <div className="p-2 md:p-4">
         <div className="rounded-lg border-2 border-white border-solid hover:border-[#cccccc] h-full">
           <div className="w-full h-full rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer">
-            <div className="relative w-full h-full ">
+            <div className="relative w-full h-full flex flex-col ">
               <CardImage centerImage={centerImage} />
 
-              <CardText title={title} subtitle={subtitle} />
+              <div className="font-karla text-base font-normal text-[#5D5D5D] px-2 md:px-4 pt-2 md:pt-4 pb-[3px] md:pb-2 flex-grow flex-shrink-0">
+                <CardText title={title} subtitle={subtitle} />
+              </div>
 
               <CardTextAndSmallImages
                 texto1={texto1}

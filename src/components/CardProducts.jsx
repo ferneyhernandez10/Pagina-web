@@ -19,7 +19,7 @@ const CardProducts = ({
       <div className="p-2 md:p-4">
         <div className="rounded-lg border-2 border-white border-solid hover:border-[#cccccc] h-full">
           <div className="w-full h-full rounded-lg overflow-hidden shadow-lg bg-white cursor-pointer">
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full flex flex-col ">
               <div
                 className="absolute top-3 left-0 flex items-center w-auto h-6 md:h-[34px] px-2 md:px-4 mb-2 bg-right bg-no-repeat bg-cover"
                 style={{
@@ -34,7 +34,12 @@ const CardProducts = ({
 
               <CardImage centerImage={centerImage} />
 
-              <CardText title={title} subtitle={subtitle} isCardProducts={true} />
+              <div className="font-karla text-base font-normal text-[#5D5D5D] px-2 md:px-4 pt-2 md:pt-4 pb-[3px] md:pb-2 flex-grow flex-shrink-0">
+                <CardText
+                  title={title}
+                  subtitle={subtitle}
+                />
+              </div>
 
               <CardTextAndSmallImages
                 icon={<FcLike />}

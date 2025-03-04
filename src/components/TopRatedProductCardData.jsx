@@ -293,7 +293,7 @@ const TopRatedProductCardData = () => {
   };
 
   return (
-    <div className="mx-0 xl:mx-[74.5px] 2xl:mx-[351.5px] px-4">
+    <div className="mx-auto px-4 max-w-[1200px]">
       <Title text="Discover top-rated products" />
       <Pagination
         currentPage={currentPageTopRatedProducts}

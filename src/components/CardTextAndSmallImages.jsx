@@ -8,7 +8,7 @@ const CardTextAndSmallImages = ({
   smallImages,
 }) => {
   return (
-    <div className={`px-2 md:px-4 pb-2 md:pb-4 ${isCardProducts ? "h-[82px]" : "h-[28px]" } lg:h-auto`}>
+    <div className="px-2 md:px-4 pb-2 md:pb-4">
       <div
         className={`${
           isCardProducts ? "flex" : "flex justify-end"
