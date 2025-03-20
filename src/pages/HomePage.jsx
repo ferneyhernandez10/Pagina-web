@@ -1,6 +1,6 @@
 import CardProductData from "../components/CardProductData";
 import HealthyProductsSection from "../components/HealthyProductsSection";
-// import HealthyProductsSectionMobile from "../components/HealthyProductsSectionMobile";
+import RecentReviews from "../components/RecentReviews";
 import TopRatedProductCardData from "../components/TopRatedProductCardData";
 
 function HomePage() {
@@ -13,6 +13,9 @@ function HomePage() {
         </div>
         <div className="bg-gray-20 py-8 md:py-14 ">
           <TopRatedProductCardData />
+        </div>
+        <div className="bg-softGray py-8 md:py-14">
+          <RecentReviews />
         </div>
       </div>
     </>

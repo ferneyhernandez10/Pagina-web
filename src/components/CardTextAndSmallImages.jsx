@@ -11,12 +11,10 @@ const CardTextAndSmallImages = ({
     <div className="px-2 md:px-4 pb-2 md:pb-4">
       <div
         className={`${
-          isCardProducts ? "flex" : "flex justify-end"
+          isCardProducts ? "flex" : "flex items-center "
         } font-karla text-base font-normal text-[#333333]`}
       >
-        {icon && (
-          <div className="lg:w-6 lg:h-6 flex justify-center">{icon}</div>
-        )}
+        {icon && <div className="flex max-w-full h-full mr-[5px] ">{icon}</div>}
         <span className="text-sm">
           <span className="mx-[3.5px]">{texto1}</span>
           <span>{texto2}</span>

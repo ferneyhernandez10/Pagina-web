@@ -13,10 +13,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/vola9chmhl4qfonwmlfb.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Bob's Red Mill Canada",
@@ -25,10 +21,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/jgabmmmyxy5rg6easaoe.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Bob's Red Mill Canada",
@@ -37,10 +29,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/m8xfpz2c3hzy5kngz2gc.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Sky Valley",
@@ -49,10 +37,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/cybt0clekkckbqucgniz.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Ocean's Halo",
@@ -61,10 +45,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/goxesxau6jrtofqalz7x.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Halo Top",
@@ -73,10 +53,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/nyykx9o57665cqbceewx.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Love Corn",
@@ -85,10 +61,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/wgxrav8nnyhbi1vr7euj.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "GnuSanté",
@@ -97,10 +69,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/tkusq4evnezdmdfymo8b.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Comvita",
@@ -109,10 +77,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/xkufaur0d9cci1ixdjls.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Health Nut",
@@ -121,10 +85,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/ylg8fatpczjxirtthfmo.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Bob's Red Mill USA",
@@ -133,10 +93,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/weuulaezlaojfht6thsv.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Rishi Tea & Botanicals",
@@ -145,10 +101,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/dsivapynlgpncphysfdm.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Freestyle World",
@@ -157,10 +109,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/slfo5yhfg7rarqmy6bjb.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Bonne Maman",
@@ -169,10 +117,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/i9uqnozh4zbml0zvffrq.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Vital Farms",
@@ -181,10 +125,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/o9dlnb7dqxbw3m9swuyp.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Vital Farms",
@@ -193,10 +133,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/dg2cjv4rnuchwbu0agcp.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Roth",
@@ -205,10 +141,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/p7lfutuq1gag6ohrd2mc.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Trimona",
@@ -217,10 +149,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/pauquuhwplipp5hsqpvm.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "Bob's Red Mill Canada",
@@ -229,10 +157,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/xbxfcpn1gde1pqttvbhn.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
     {
       title: "GOODLES",
@@ -241,10 +165,6 @@ const TopRatedProductCardData = () => {
       texto2: "Reviews",
       centerImage:
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/lnglpxwts1wn5wcpl5dv.png",
-      // smallImages: [
-      //   "https://www.socialnature.com/images/retailers/publix.png",
-      //   "https://www.socialnature.com/images/retailers/winndixie.png",
-      // ],
     },
   ];
 

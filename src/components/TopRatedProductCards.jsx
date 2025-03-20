@@ -3,6 +3,7 @@ import Card from "./Card";
 import CardImage from "./CardImage";
 import CardText from "./CardText";
 import CardTextAndSmallImages from "./CardTextAndSmallImages";
+import StarRating from "./StarRating";
 
 const TopRatedProductCards = ({
   centerImage,
@@ -24,9 +25,9 @@ const TopRatedProductCards = ({
               </div>
 
               <CardTextAndSmallImages
+                icon={<StarRating />}
                 texto1={texto1}
                 texto2={texto2}
-                // smallImages={product.smallImages}
               />
             </div>
           </div>
