@@ -2,12 +2,16 @@ import CardProductData from "../components/CardProductData";
 import HealthyProductsSection from "../components/HealthyProductsSection";
 import RecentReviews from "../components/RecentReviews";
 import TopRatedProductCardData from "../components/TopRatedProductCardData";
+import CashBackSection from "../components/CashBackSection";
 
 function HomePage() {
   return (
     <>
       <div className="mt-[60px] pb-3.5 flex flex-col">
         <HealthyProductsSection />
+        <div className="bg-white py-6 md:py-10">
+          <CashBackSection />
+        </div>
         <div className="bg-gray-10 py-8 md:py-14 ">
           <CardProductData />
         </div>
