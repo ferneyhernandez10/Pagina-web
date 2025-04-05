@@ -3,6 +3,7 @@ import HealthyProductsSection from "../components/HealthyProductsSection";
 import RecentReviews from "../components/RecentReviews";
 import TopRatedProductCardData from "../components/TopRatedProductCardData";
 import CashBackSection from "../components/CashBackSection";
+import DietSection from "../components/DietSection";
 
 function HomePage() {
   return (
@@ -20,6 +21,9 @@ function HomePage() {
         </div>
         <div className="bg-softGray py-8 md:py-14">
           <RecentReviews />
+        </div>
+        <div className="bg-gray-10 py-8 md:py-14 ">
+          <DietSection />
         </div>
       </div>
     </>
