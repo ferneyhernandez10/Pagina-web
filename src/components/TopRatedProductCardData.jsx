@@ -7,6 +7,7 @@ import TopRatedProductCards from "./TopRatedProductCards";
 const TopRatedProductCardData = () => {
   const topRatedProductCards = [
     {
+      id:1,
       title: "Nom Nom",
       subtitle: "Nutrient-Packed Dog Food",
       texto1: "10098",
@@ -15,6 +16,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/vola9chmhl4qfonwmlfb.png",
     },
     {
+      id:2,
       title: "Bob's Red Mill Canada",
       subtitle: "All-Purpose White Flour",
       texto1: "1186",
@@ -23,6 +25,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/jgabmmmyxy5rg6easaoe.png",
     },
     {
+      id:3,
       title: "Bob's Red Mill Canada",
       subtitle: "Whole Grain Bagged Oats",
       texto1: "737",
@@ -31,6 +34,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/m8xfpz2c3hzy5kngz2gc.png",
     },
     {
+      id:4,
       title: "Sky Valley",
       subtitle: "Green Sriracha",
       texto1: "2391",
@@ -39,6 +43,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/cybt0clekkckbqucgniz.png",
     },
     {
+      id:5,
       title: "Ocean's Halo",
       subtitle: "Organic Broths",
       texto1: "562",
@@ -47,6 +52,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/goxesxau6jrtofqalz7x.png",
     },
     {
+      id:6,
       title: "Halo Top",
       subtitle: "Light Ice-Cream",
       texto1: "12127",
@@ -55,6 +61,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/nyykx9o57665cqbceewx.png",
     },
     {
+      id:7,
       title: "Love Corn",
       subtitle: "Delicious Crunchy Corn Snack",
       texto1: "739",
@@ -63,6 +70,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/wgxrav8nnyhbi1vr7euj.png",
     },
     {
+      id:8,
       title: "GnuSanté",
       subtitle: "Functional Fruit Shakes",
       texto1: "2401",
@@ -71,6 +79,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/tkusq4evnezdmdfymo8b.png",
     },
     {
+      id:9,
       title: "Comvita",
       subtitle: "Raw Manuka Honey",
       texto1: "9066",
@@ -79,6 +88,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/xkufaur0d9cci1ixdjls.png",
     },
     {
+      id:10,
       title: "Health Nut",
       subtitle: "Fresh Obsessed Dressings",
       texto1: "7676",
@@ -87,6 +97,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/ylg8fatpczjxirtthfmo.png",
     },
     {
+      id:11,
       title: "Bob's Red Mill USA",
       subtitle: "Pancake & Waffle Mix",
       texto1: "3017",
@@ -95,6 +106,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/weuulaezlaojfht6thsv.png",
     },
     {
+      id:12,
       title: "Rishi Tea & Botanicals",
       subtitle: "Organic Tea",
       texto1: "3463",
@@ -103,6 +115,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/dsivapynlgpncphysfdm.png",
     },
     {
+      id:13,
       title: "Freestyle World",
       subtitle: "Hyper Absorbent Diapers",
       texto1: "1410",
@@ -111,6 +124,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/slfo5yhfg7rarqmy6bjb.png",
     },
     {
+      id:14,
       title: "Bonne Maman",
       subtitle: "Hazelnut Chocolate Spread",
       texto1: "12528",
@@ -119,6 +133,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/i9uqnozh4zbml0zvffrq.png",
     },
     {
+      id:15,
       title: "Vital Farms",
       subtitle: "Grass-Fed Butter",
       texto1: "15690",
@@ -127,6 +142,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/o9dlnb7dqxbw3m9swuyp.png",
     },
     {
+      id:16,
       title: "Vital Farms",
       subtitle: "Organic Restorative Eggs",
       texto1: "4513",
@@ -135,6 +151,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/dg2cjv4rnuchwbu0agcp.png",
     },
     {
+      id:17,
       title: "Roth",
       subtitle: "Havarti Cheese",
       texto1: "7250",
@@ -143,6 +160,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/p7lfutuq1gag6ohrd2mc.png",
     },
     {
+      id:18,
       title: "Trimona",
       subtitle: "A2A2 Probiotic Yogurt",
       texto1: "176",
@@ -151,6 +169,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/pauquuhwplipp5hsqpvm.png",
     },
     {
+      id:19,
       title: "Bob's Red Mill Canada",
       subtitle: "Snack Bars",
       texto1: "8416",
@@ -159,6 +178,7 @@ const TopRatedProductCardData = () => {
         "https://d2v6hcajofki8b.cloudfront.net/dras34d35/image/upload/c_fit,h_500,q_100,w_500/xbxfcpn1gde1pqttvbhn.png",
     },
     {
+      id:20,
       title: "GOODLES",
       subtitle: "Protein Rich Mac & Cheese",
       texto1: "15732",

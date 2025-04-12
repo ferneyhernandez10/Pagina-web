@@ -25,9 +25,9 @@ const CardTextAndSmallImages = ({
         <div className="pt-2 md:pt-4">
           {Array.isArray(smallImages) ? (
             <div className="flex">
-              {smallImages.map((img, index) => (
+              {smallImages.map((img, id) => (
                 <img
-                  key={index}
+                  key={id}
                   className="w-[26px] md:w-8 h-[26px] md:h-8 rounded-sm"
                   src={img}
                   alt="Card small images"

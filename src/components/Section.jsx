@@ -8,8 +8,8 @@ const Section = ({ title, items }) => {
         {title}
       </h2>
       <div className="flex flex-wrap md:flex-nowrap justify-between mx-[-16px] px-2 md:px-0 text-[#333333] ">
-        {items.map((item, index) => (
-          <CardList key={index} src={item.src} title={item.title} />
+        {items.map((item, id) => (
+          <CardList key={id} src={item.src} title={item.title} />
         ))}
       </div>
     </div>

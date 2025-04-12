@@ -6,8 +6,8 @@ const StarRating = ({ className }) => {
   const styles = `${baseStyles} ${className || ""}`;
   return (
     <div className={styles}>
-      {[...Array(5)].map((_, index) => (
-        <IoIosStar key={index} className="w-full max-w-4 max-h-4" />
+      {[...Array(5)].map((_, id) => (
+        <IoIosStar key={id} className="w-full max-w-4 max-h-4" />
       ))}
     </div>
   );

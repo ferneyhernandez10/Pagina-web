@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 const CardProductData = () => {
   const cardProducts = [
     {
+      id:1,
       topText: "Free product",
       title: "GOOGLES",
       subtitle: "Deluxe Mac & Cheese",
@@ -17,6 +18,7 @@ const CardProductData = () => {
       smallImages: "https://www.socialnature.com/images/retailers/target.png",
     },
     {
+      id:2,
       topText: "75% off",
       title: "Effie's Homemade",
       subtitle: "Lightly Sweet Biscuits",
@@ -28,6 +30,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:3,
       topText: "Free product",
       title: "Ocean's Halo",
       subtitle: "Tonkatsu Sauce",
@@ -38,6 +41,7 @@ const CardProductData = () => {
       smallImages: "https://www.socialnature.com/images/retailers/walmart.png",
     },
     {
+      id:4,
       topText: "Free product",
       title: "LOVO",
       subtitle: "Dairy-Free Milk Chocolate",
@@ -52,6 +56,7 @@ const CardProductData = () => {
       ],
     },
     {
+      id:5,
       topText: "Free product",
       title: "Nature's Fynd",
       subtitle: "Dairy-Free Fy Yogurt",
@@ -63,6 +68,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:6,
       topText: "Free product",
       title: "Remedy Organics",
       subtitle: "Organic Protein Shakes",
@@ -74,6 +80,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:7,
       topText: "Free product",
       title: "Goldthread",
       subtitle: "Plant-Based Tonics",
@@ -85,6 +92,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:8,
       topText: "50% off",
       title: "D'arbo",
       subtitle: "Wild Lingonberry Sauce",
@@ -96,6 +104,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:9,
       topText: "Free product",
       title: "RYDE",
       subtitle: "Energizing Shots",
@@ -109,6 +118,7 @@ const CardProductData = () => {
       ],
     },
     {
+      id:10,
       topText: "Free product",
       title: "Deweys",
       subtitle: "Dewzies Layered Cookies",
@@ -122,6 +132,7 @@ const CardProductData = () => {
       ],
     },
     {
+      id:11,
       topText: "Free product",
       title: "Ocean's Halo",
       subtitle: "Organic Kimbap",
@@ -133,6 +144,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:12,
       topText: "Buy 1 Get 1 Free",
       title: "Farmer Direct Foods",
       subtitle: "Flour From Family Farms",
@@ -143,6 +155,7 @@ const CardProductData = () => {
       smallImages: "https://www.socialnature.com/images/retailers/sprouts.png",
     },
     {
+      id:13,
       topText: "Free product",
       title: "Whoa Dough",
       subtitle: "Gluten-Free Cookie Dough",
@@ -153,6 +166,7 @@ const CardProductData = () => {
       smallImages: "https://www.socialnature.com/images/retailers/aldi.png",
     },
     {
+      id:14,
       topText: "Buy 1 Get 1 Free",
       title: "Theo Chocolate",
       subtitle: "Organic Chocolate",
@@ -164,6 +178,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:15,
       topText: "Free product",
       title: "Ocean's Halo",
       subtitle: "Organic Banh Mi Veggies",
@@ -174,6 +189,7 @@ const CardProductData = () => {
       smallImages: "https://www.socialnature.com/images/retailers/walmart.png",
     },
     {
+      id:16,
       topText: "Free product",
       title: "Ocean's Halo",
       subtitle: "Organic Seaweed Snacks",
@@ -185,6 +201,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:17,
       topText: "Free product",
       title: "Golden Wing",
       subtitle: "Barley Milk",
@@ -198,6 +215,7 @@ const CardProductData = () => {
       ],
     },
     {
+      id:18,
       topText: "Buy 1 Get 1 Free",
       title: "Theo Chocolate",
       subtitle: "Organic Chocolate Bars",
@@ -208,6 +226,7 @@ const CardProductData = () => {
       smallImages: "https://www.socialnature.com/images/retailers/sprouts.png",
     },
     {
+      id:19,
       topText: "Buy 1 Get 1 Free",
       title: "Blue Stripes",
       subtitle: "Upcycled Cacao Chocolate",
@@ -219,6 +238,7 @@ const CardProductData = () => {
         "https://www.socialnature.com/images/retailers/wholefoodsmarket.png",
     },
     {
+      id:20,
       topText: "50% off",
       title: "Simek's",
       subtitle: "Premium Frozen Meatballs",
